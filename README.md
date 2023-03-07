@@ -33,11 +33,11 @@ gdbuild
 gdbuild -d
 
 # You can also run the build and automatically start Godot if the build is successful
-gdbuild && /bin/godot.linuxbsd.editor.dev.x86_64.llvm
+gdbuild && bin/godot.linuxbsd.editor.dev.x86_64.llvm
 
 # If you want to skip the Project Manager and directly open a specific project
 # (don't forget to change the --path value to a valid Godot Project directory)
-gdbuild && /bin/godot.linuxbsd.editor.dev.x86_64.llvm --editor --path /home/hakim/Projects/godot4-test/
+gdbuild && bin/godot.linuxbsd.editor.dev.x86_64.llvm --editor --path /home/hakim/Projects/godot4-test/
 ```
 
 ## Possible next steps
