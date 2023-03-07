@@ -8,6 +8,11 @@ It's uses the tips mentioned in the [documentation](https://docs.godotengine.org
 It's useful for developers who work on the engine codes itself, or those who will be using GDExtensions.
 
 ## Run it
+TLDR; From your Godot source code directory, run the following command to trigger a build
+```bash
+docker run -it --rm -v $PWD:/godot hakrou/godot-dev gdbuild
+```
+
 To build Godot from source, you can use the following steps:
 
 ```bash
@@ -37,6 +42,6 @@ gdbuild && /bin/godot.linuxbsd.editor.dev.x86_64.llvm --editor --path /home/haki
 
 ## Possible next steps
 If there is popular demand, we can add the following :
-- [ ] Deploy a prebuilt image on Dockerhub so you don't have to build it yourself
+- [x] Deploy a prebuilt image on Dockerhub so you don't have to build it yourself
 - [ ] Add a full C++ IDE inside the container using (Neo)Vim and additional modules (LSP, Clangd ...)
 - [ ] Make the build script more configurable, by choosing what linker or compiler to use
