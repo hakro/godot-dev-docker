@@ -28,4 +28,4 @@ RUN pyston -m pip install scons \
 COPY gdbuild /usr/local/bin
 RUN chmod a+x /usr/local/bin/gdbuild
 
-WORKDIR /Projects/godot
+WORKDIR /godot
