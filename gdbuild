@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Add the -d option if you want to generate the compile_commands.json file
+compiledb=no
+
+while getopts :d flag
+do
+    case "${flag}" in
+        d) compiledb=yes
+    esac
+done
+
+pyston-scons -j$(nproc --ignore 2) use_llvm=yes linker=mold dev_build=yes compiledb=$compiledb
