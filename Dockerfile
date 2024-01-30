@@ -9,7 +9,7 @@ WORKDIR /root
 RUN apt update && apt install -y build-essential scons pkg-config \
                             libx11-dev libxcursor-dev libxinerama-dev \
                             libgl1-mesa-dev libglu-dev libasound2-dev \
-                            libpulse-dev libudev-dev libxi-dev libxrandr-dev \
+                            libpulse-dev libudev-dev libxi-dev libxrandr-dev libwayland-bin \
                             wget git clang
 
 # Download and configure Mold
